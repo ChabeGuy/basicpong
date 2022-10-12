@@ -38,8 +38,8 @@ basic.forever(function () {
     }
     Ball.move(1)
     if (Ball.get(LedSpriteProperty.Y) == 4) {
-        music.playMelody("A B A G A G F F ", 120)
         game.gameOver()
+        music.playMelody("A B A G A G F F ", 120)
     }
     Ball.ifOnEdgeBounce()
 })
